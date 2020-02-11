@@ -3,8 +3,8 @@
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <h1>About Me</h1>
+    <p class="lead">Senior at Ohio University hoping to graduate Spring 2020, currently taking final capstone classes.</p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
@@ -22,7 +22,10 @@
     <div class="col-md-4">
         <h2>Get more libraries</h2>
         <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <p><a @Html.ActionLink("Students", "Index", "Students")</a></p>
+        <p><a @Html.ActionLink("Courses", "Index", "Courses")</a></p>
+        <p><a @Html.ActionLink("Instructors", "Index", "Instructors")</a></p>
+        <p><a @Html.ActionLink("CourseDetails", "Index", "CourseDetails")</a></p>
     </div>
     <div class="col-md-4">
         <h2>Web Hosting</h2>
