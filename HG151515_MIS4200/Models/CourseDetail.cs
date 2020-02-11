@@ -13,7 +13,7 @@ namespace HG151515_MIS4200.Models
 
         // the next two properties link the course detial to the the course
         public int courseID { get; set; }
-        public virtual Order Order { get; set; }
+        public virtual Course Course { get; set; }
 
         //the next two properties link othe detail with the instructor 
         public int InstructorID { get; set; }
