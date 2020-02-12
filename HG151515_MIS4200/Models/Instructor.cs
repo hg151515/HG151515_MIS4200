@@ -19,5 +19,8 @@ namespace HG151515_MIS4200.Models
         //indicate with ICollection 
 
         public ICollection<CourseDetail> CourseDetail { get; set; }
+
+        //add school of business information
+        public int schoolID { get; set; }
     }
 }

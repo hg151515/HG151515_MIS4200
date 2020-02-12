@@ -47,7 +47,7 @@ namespace HG151515_MIS4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "instructorID,instructorfirstName,instructorlastName,instructorEmail,instructorPhone")] Instructor instructor)
+        public ActionResult Create([Bind(Include = "instructorID,instructorfirstName,instructorlastName,instructorEmail,instructorPhone,schoolID")] Instructor instructor)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace HG151515_MIS4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "instructorID,instructorfirstName,instructorlastName,instructorEmail,instructorPhone")] Instructor instructor)
+        public ActionResult Edit([Bind(Include = "instructorID,instructorfirstName,instructorlastName,instructorEmail,instructorPhone,schoolID")] Instructor instructor)
         {
             if (ModelState.IsValid)
             {
