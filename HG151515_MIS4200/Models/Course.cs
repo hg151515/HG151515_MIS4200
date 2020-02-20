@@ -15,10 +15,9 @@ namespace HG151515_MIS4200.Models
 
         public ICollection<CourseDetail> CourseDetail { get; set; }
 
-        public int studentID { get; set; }
-        public virtual Student Student { get; set; }
+        public int instructorID { get; set; }
+        public virtual Instructor Instructors { get; set; }
 
-        [Key]
-        public int orderID { get; set; }
+        
     }
 }

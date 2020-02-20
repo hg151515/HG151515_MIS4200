@@ -23,7 +23,7 @@ namespace HG151515_MIS4200.Models
         //the local name of the collection will be Order 
         //(the object name and the local name don't have to be the same)
 
-        public ICollection<Course> Course { get; set; }
+        public ICollection<CourseDetail> CourseDetail { get; set; }
 
 
     }

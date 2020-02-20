@@ -16,8 +16,8 @@ namespace HG151515_MIS4200.Models
         public virtual Course Course { get; set; }
 
         //the next two properties link othe detail with the instructor 
-        public int InstructorID { get; set; }
-        public virtual Instructor Instructor { get; set; }
+        public int StudentID { get; set; }
+        public virtual Student Student { get; set; }
 
     }
 }

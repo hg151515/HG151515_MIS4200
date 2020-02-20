@@ -18,7 +18,7 @@ namespace HG151515_MIS4200.Models
         //instructor is on the one side of the one to many wit coursedetail
         //indicate with ICollection 
 
-        public ICollection<CourseDetail> CourseDetail { get; set; }
+        public ICollection<Course> Course { get; set; }
 
         //add school of business information
         public int schoolID { get; set; }
