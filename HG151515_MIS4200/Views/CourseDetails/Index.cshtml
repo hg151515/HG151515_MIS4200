@@ -1,0 +1,51 @@
+﻿@model IEnumerable<HG151515_MIS4200.Models.CourseDetail>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Course.courseDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Student.studentfirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coursedetailDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coursestartTime)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Course.courseDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Student.studentfirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coursedetailDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coursestartTime)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.coursedetailID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.coursedetailID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.coursedetailID })
+        </td>
+    </tr>
+}
+
+</table>
